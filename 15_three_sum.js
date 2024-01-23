@@ -22,11 +22,11 @@ var threeSum = function (nums) {
           arr.push([nums[i], nums[j], nums[k]]);
         }
         k--;
-        while (nums[k + 1] === nums[k]) {
+        while (nums[k + 1] === nums[k] && j < k) {
           k--;
         }
         j++;
-        while (nums[i - 1] === nums[i]) {
+        while (nums[i - 1] === nums[i] && j < k) {
           j++;
         }
       }
