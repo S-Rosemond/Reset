@@ -18,7 +18,6 @@ function orbitalPeriod(arr) {
 
     return { name: el.name, orbitalPeriod };
   });
-  console.log(result);
   return result;
 }
 
