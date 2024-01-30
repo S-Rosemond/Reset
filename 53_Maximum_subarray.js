@@ -7,7 +7,8 @@ var maxSubArray = function (nums) {
   for (let i = 0; i < nums.length; i++) {
     newArr[i] += Math.max(prefix + nums[i], nums[i]);
     max = Math.max(max, newArr[i]);
-
+    // watched video after solving it: CS Dojo. According to video
+    // prefix = max, also in video no new array is used: potential refactor
     prefix = Math.max(prefix + nums[i], nums[i]);
   }
   return max;
