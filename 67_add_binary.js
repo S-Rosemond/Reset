@@ -34,6 +34,7 @@ var addBinary = function (a, b) {
     loop--;
   }
   if (carry) result = "" + carry + result;
+  return result;
 };
 
 addBinary("1111", "1111"); // 11110
