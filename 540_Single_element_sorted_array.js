@@ -21,7 +21,7 @@ var singleNonDuplicate = function (nums) {
     if (nearLeft !== current && nearRight !== current) return current;
 
     leftSize = nearLeft === current ? mid - 1 : mid;
-    let isOdd = Boolean(leftSize % 2 === 1);
+    let isOdd = leftSize % 2 === 1;
     if (isOdd) right = mid - 1;
     else left = mid + 1;
   }
